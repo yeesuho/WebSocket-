@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅 로그인</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth_container">
+    <div id="auth_tabs">
+      <button id="login_tab" class="active">로그인</button>
+      <button id="signup_tab">회원가입</button>
+    </div>
+
+    <form id="auth_form">
+      <input type="text" id="auth_username" placeholder="아이디" required />
+      <input type="password" id="auth_password" placeholder="비밀번호" required />
+      <button type="submit" id="auth_button">로그인</button>
+      <div id="auth_error" class="error_message"></div>
+    </form>
+  </div>
+
+  <div id="chat_app" style="display: none;">
+    <div id="chat_container"></div>
+    <div id="input_area">
+      <input type="text" id="message_input" placeholder="메시지를 입력하세요" />
+      <button id="send_button">전송</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+
+</html>
